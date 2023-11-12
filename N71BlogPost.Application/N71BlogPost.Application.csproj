@@ -10,4 +10,8 @@
     <ProjectReference Include="..\N71BlogPost.Domain\N71BlogPost.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+
 </Project>
