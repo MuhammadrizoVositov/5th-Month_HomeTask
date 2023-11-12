@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\N71BlogPost.Application\N71BlogPost.Application.csproj" />
+    <ProjectReference Include="..\N71BlogPost.Persistence\N71BlogPost.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>
