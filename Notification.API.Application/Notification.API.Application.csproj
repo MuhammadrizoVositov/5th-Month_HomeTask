@@ -10,4 +10,8 @@
     <ProjectReference Include="..\Notification.API.Domain\Notification.API.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Common\Entities\" />
+  </ItemGroup>
+
 </Project>

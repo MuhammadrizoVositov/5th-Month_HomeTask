@@ -13,8 +13,8 @@ public class UserSettingsService : IUserSettingService
         _userSettingsRepository = userSettingsRepository;
     }
 
-    public ValueTask<Application.Common.Entities.UserSettings?> GetByIdAsync(Guid userSettingsId, bool asNoTracking=true, CancellationToken cancellationToken=default)
+    public ValueTask<UserSettings?> GetByIdAsync(Guid userSettingsId, bool asNoTracking=true, CancellationToken cancellationToken=default)
     {
-        _userSettingsRepository.GetByIdAsync(userSettingsId, asNoTracking, cancellationToken);
+        return _userSettingsRepository.GetByIdAsync(userSettingsId, asNoTracking, cancellationToken);
     }
 }

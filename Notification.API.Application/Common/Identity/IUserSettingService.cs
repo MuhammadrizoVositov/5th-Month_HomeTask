@@ -8,6 +8,5 @@ using System.Threading.Tasks;
 namespace Notification.API.Application.Common.Identity;
 public interface IUserSettingService
 {
-    ValueTask<UserSettings?> 
-        GetByIdAsync(Guid userSettingsId, bool asNoTracking = false, CancellationToken cancellationToken = default);
+    public ValueTask<UserSettings?> GetByIdAsync(Guid userSettingsId, bool asNoTracking = true, CancellationToken cancellationToken = default);
 }
