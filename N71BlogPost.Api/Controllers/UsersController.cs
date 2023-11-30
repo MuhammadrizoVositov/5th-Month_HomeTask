@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using N71BlogPost.Application.Services;
 using N71BlogPost.Domain.Entity;
 
@@ -20,7 +21,7 @@ namespace N71BlogPost.Api.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-          return Ok(_userService.Get());
+          return Ok(_userService.Get().Include(u=>u.Blogs));
         }
         [HttpPost]
         public IActionResult Create([FromBody] User user) 

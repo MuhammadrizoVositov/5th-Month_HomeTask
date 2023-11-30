@@ -10,7 +10,6 @@ public class CommentConfiguration : IEntityTypeConfiguration<Comment>
     {
         builder
             .HasMany(comment => comment.Comments)
-            .WithOne()
-            .HasForeignKey(comment => comment.ParentId);
+            .WithOne();
     }
 }

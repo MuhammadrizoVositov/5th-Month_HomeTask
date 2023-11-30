@@ -21,7 +21,7 @@ public abstract class EntityBaseRepository<TEntity, TContext> where TEntity : cl
         return DbContext.Set<TEntity>().AsQueryable();
 
     }
-
+ 
     protected async ValueTask<TEntity?> GetByIdAsync(Guid id, bool asNoTracking = true,CancellationToken cancellationToken = default)
     {
         if(asNoTracking)
