@@ -1,4 +1,5 @@
 ﻿using Notification.API.Application.Common.Entities;
+using Notification.API.Domain.Common.Entitys;
 using System;
 using System.Collections.Generic;
 using System.Linq;

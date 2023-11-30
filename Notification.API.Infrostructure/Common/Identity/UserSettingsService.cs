@@ -17,4 +17,4 @@ public class UserSettingsService : IUserSettingService
     {
         return _userSettingsRepository.GetByIdAsync(userSettingsId, asNoTracking, cancellationToken);
     }
-}
+}       
