@@ -4,7 +4,7 @@ using HomeTask.Persistance.DataAccess;
 
 namespace HomeTask.Persistance.Repositories;
 
-public class UserRepository : EntityBaseRepository<SoftDeleted, AppDbContext>,IUserRepository
+public class UserRepository : EntityBaseRepository<User, AppDbContext>,IUserRepository
 {
     private readonly AppDbContext dbContext;
 

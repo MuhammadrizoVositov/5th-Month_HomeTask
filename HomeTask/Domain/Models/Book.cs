@@ -1,6 +1,8 @@
-﻿namespace HomeTask.Domain.Models;
+﻿using HomeTask.Domain.Commons;
 
-public class Book
+namespace HomeTask.Domain.Models;
+
+public class Book : SoftDeleted
 {
     public Guid UserId { get; set; }
     public int PageSize { get; set; }

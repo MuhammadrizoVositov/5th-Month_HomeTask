@@ -1,6 +1,8 @@
-﻿namespace HomeTask.Domain.Models;
+﻿using HomeTask.Domain.Commons;
 
-public class User
+namespace HomeTask.Domain.Models;
+
+public class User:SoftDeleted
 {
     public string FirstName { get; set; } = default!;
     public string LastName { get; set; } = default!;
